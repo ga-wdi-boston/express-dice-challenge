@@ -8,6 +8,35 @@ Objectives
 
 - Build an express app that uses query parameters
 
+Instructions
+------------
+
+Starting with `express-generator`, write a new express app. Your app should respond as follows:
+
+```text
+Request   GET /roll
+Response  JSON {"roll": 3}   # a random number between 1 and 6
+```
+
+**Bonus**
+
+```text
+Request   GET /roll?q=1d10   # "1d10" is a "dice expression"
+Response  JSON {"roll": 5}   # a random number between 1 and 10
+```
+
+
+```text
+Request   GET /roll?q=2d10+4 # roll 2 10-sided dice and add 4
+Response  JSON {"roll": 15}  # a random number between 6 and 24
+```
+
+Additional Resources
+--------------------
+
+- [Dice Expressions](http://lmwcs.com/rptools/wiki/Dice_Expressions)
+- [Node Query Parameters](http://expressjs.com/api.html#req.query)
+
 [License](LICENSE)
 ------------------
 
